@@ -43,7 +43,7 @@ class RegistrationControllerTest : TestControllerSupport() {
     fun testRegister() {
         TestScenarioSupport().loadTestScenario("jacks-test-scenario")
 
-        val registrationResponse = template.post("http://localhost:8081/registration", "{\"name\":\"aUser\"}")
+        val registrationResponse = template.post("http://localhost:8081/registration", "application/json", "{\"name\":\"aUser\"}")
         val actual = mapper.readValue(registrationResponse, UserInfo::class.java)
 
         assert(actual.id > 0)
