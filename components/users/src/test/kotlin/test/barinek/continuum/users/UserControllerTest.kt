@@ -39,7 +39,7 @@ class UserControllerTest : TestControllerSupport() {
     fun testShow() {
         TestScenarioSupport().loadTestScenario("jacks-test-scenario")
 
-        val response = template.get("http://localhost:8081/users", BasicNameValuePair("userId", "4765"))
+        val response = template.get("http://localhost:8081/users", "application/json", BasicNameValuePair("userId", "4765"))
         val actual = mapper.readValue(response, UserInfo::class.java)
 
         assertEquals(4765L, actual.id)

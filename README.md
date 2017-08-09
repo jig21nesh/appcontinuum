@@ -13,6 +13,7 @@ v3              Feature groups (Bounded Context)
 v4              Components
 v5              Applications
 v6              Services
+v7              Versioning
 ```
 
 ### Database Setup

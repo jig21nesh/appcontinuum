@@ -46,7 +46,7 @@ class StoryControllerTest : TestControllerSupport() {
         whenever(client.getProject(any())).thenReturn(ProjectInfo(true))
 
         val json = "{\"projectId\":55432,\"name\":\"An epic story\"}"
-        val response = template.post("http://localhost:8081/stories", json)
+        val response = template.post("http://localhost:8081/stories", "application/json", json)
         val actual = mapper.readValue(response, StoryInfo::class.java)
 
         assert(actual.id > 0)
@@ -62,7 +62,7 @@ class StoryControllerTest : TestControllerSupport() {
         whenever(client.getProject(any())).thenReturn(ProjectInfo(false))
 
         val json = "{\"projectId\":55432,\"name\":\"An epic story\"}"
-        val response = template.post("http://localhost:8081/stories", json)
+        val response = template.post("http://localhost:8081/stories", "application/json", json)
         assert(response.isBlank())
     }
 
@@ -70,7 +70,7 @@ class StoryControllerTest : TestControllerSupport() {
     fun testFind() {
         TestScenarioSupport().loadTestScenario("jacks-test-scenario")
 
-        val response = template.get("http://localhost:8081/stories", BasicNameValuePair("projectId", "55432"))
+        val response = template.get("http://localhost:8081/stories", "application/json", BasicNameValuePair("projectId", "55432"))
         val stories: List<StoryInfo> = mapper.readValue(response, object : TypeReference<List<StoryInfo>>() {})
         val actual = stories.first()
 
