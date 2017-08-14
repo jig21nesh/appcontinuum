@@ -113,6 +113,7 @@ v4    Components
 v5    Applications
 v6    Services
 v7    Versioning
+v8    Databases
 
 </code></pre>
 
@@ -350,6 +351,15 @@ v7    Versioning
             <span class="architecture">Design decision</span> I've used the Accept Header for my versioning strategy. There are lots of debates around how best to publish a new API version; URL, Accept Header, Custom Header. My recommendation is to simply choose the one that best meets your needs.
         </p>
 
+
+        <h5>
+            <a id="v8-tag-databases" class="anchor" href="#v8-tag-databases" aria-hidden="true"><span aria-hidden="true"
+                                                                                                        class="octicon octicon-link"></span></a>Databases <span class="new">New Sept-2017</span>
+        </h5>
+
+        <p>
+            The v8 commit moves away from a single database to a database per microservice; Allocations, Backlog, Registration, and Timesheets. Implementing a per component data store becomes increasingly important as you evolve your application along the continuum to a distributed system. Service coupling has been completely removed. Services are now able to manage their own persistence strategy (choice of database technology), schema, and API versioning strategy independent of the other services.
+        </p>
 
         <hr>
 
