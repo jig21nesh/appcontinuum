@@ -1,108 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
-<html>
 <head>
-    <link rel="stylesheet" type="text/css" href="stylesheets/continuum.css"/>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="The application continuum describes the evolution of a cloud native architecture. This website and codebase will make you a better developer.">
-
-    <meta content="summary_large_image" name="twitter:card"/>
-    <meta content="Application continuum - evolution of a cloud native architecture" name="twitter:title"/>
-    <meta content="The application continuum describes the evolution of a cloud native architecture. This website and codebase will make you a better developer."
-          name="twitter:description"/>
-    <meta content="@barinek" name="twitter:site"/>
-
-    <meta content="origin-when-cross-origin" name="referrer"/>
-    <meta content="NOODP,NOYDIR" name="robots"/>
-
-    <meta content="Application continuum - evolution of a cloud native architecture"
-          property="og:title"/>
-    <meta content="article" property="og:type"/>
-    <meta content="Application continuum" property="og:site_name"/>
-    <meta content="http://www.appcontinuum.io/images/AC_Logo4x.png"
-          property="og:image"/>
-    <meta content="http://www.appcontinuum.io/"
-          property="og:url"/>
-    <meta content="The application continuum describes the evolution of a cloud native architecture. This website and codebase will make you a better developer."
-          property="og:description"/>
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1369AA">
 
     <title>The Application Continuum</title>
-</head>
+    <meta name="description"
+          content="The application continuum describes the evolution of a cloud native architecture. This website and codebase will make you a better developer.">
 
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Application continuum - evolution of a cloud native architecture"/>
+    <meta name="twitter:description"
+          content="The application continuum describes the evolution of a cloud native architecture. This website and codebase will make you a better developer."/>
+    <meta name="twitter:site" content="@barinek"/>
+    <meta name="twitter:image" content="http://www.appcontinuum.io/images/app-continuum-logo-white.png"/>
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Application continuum - evolution of a cloud native architecture"/>
+    <meta property="og:description"
+          content="The application continuum describes the evolution of a cloud native architecture. This website and codebase will make you a better developer."/>
+    <meta property="og:site_name" content="Application continuum"/>
+    <meta property="og:image" content="http://www.appcontinuum.io/images/app-continuum-logo.png"/>
+    <meta property="og:url" content="http://www.appcontinuum.io/"/>
+</head>
 <body>
 
-<!-- HEADER -->
-<div id="header_wrap" class="outer">
-    <header class="inner">
-        <a id="forkme_banner" href="https://github.com/barinek/appcontinuum">View on GitHub</a>
+<header>
+    <div class="content">
+        <a id="github-banner" href="https://github.com/barinek/appcontinuum">View on GitHub</a>
 
-        <img src="images/AC_Logo4x.png" alt="" class="continuum_logo">
-        <h2 id="project_tagline">Evolution of a cloud native architecture</h2>
+        <img src="images/app-continuum-logo.png" alt="App Continuum logo">
+        <h2>Evolution of a cloud native architecture</h2>
 
         <section id="downloads">
-            <a class="zip_download_link" href="https://github.com/barinek/appcontinuum/zipball/master">Download this
+            <a class="zip download-link" href="https://github.com/barinek/appcontinuum/zipball/master">Download this
                 project as a .zip file</a>
-            <a class="tar_download_link" href="https://github.com/barinek/appcontinuum/tarball/master">Download this
+            <a class="tar download-link" href="https://github.com/barinek/appcontinuum/tarball/master">Download this
                 project as a tar.gz file</a>
         </section>
-    </header>
-</div>
+    </div>
+</header>
 
-<!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-
-
-        <h1 class="continuum_msg">
-            This website and codebase will make you a better developer.
-        </h1>
+<main>
+    <div class="content">
+        <h1>This website and codebase will make you a better developer.</h1>
 
         <hr>
 
-        <h3>
-            <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true"
-                                                                                              class="octicon octicon-link"></span></a>Introduction
-        </h3>
+        <h2 id="introduction">Introduction</h2>
 
-        <p>I've been part of several discussions that argue for and against building applications with microservices. In
-            response, I've introduced the below diagram and associated architecture to show the evolution of a
+        <p>
+            I've been part of several discussions that argue for and against building applications with microservices.
+            In response, I've introduced the below diagram and associated architecture to show the evolution of a
             distributed system starting from a single application and evolving into several applications and services.
             Starting with a single application is just as viable as starting with microservices, it simply depends on
-            how much information you're given.</p>
+            how much information you're given.
+        </p>
 
-        <p><img class="continuum" src="images/continuum_graphic4x.png" alt=""></p>
+        <img src="images/continuum-scale.png" alt="App Continuum scale">
 
-        <p>Projects could start anywhere on the continuum, typically driven by the amount of information a team has
+        <p>
+            Projects could start anywhere on the continuum, typically driven by the amount of information a team has
             about an application or set of applications. The amount of information is often driven by product /market
             fit. The less you know about a given market, which is typically common for startups, the further left you'd
             start. The more you know about a given market, the further right. Large, enterprise business-to-business
             applications, for example, tend to experience low market risk but often face high execution risk. Hence the
-            tendency for enterprises to start on the far right of the continuum.</p>
+            tendency for enterprises to start on the far right of the continuum.
+        </p>
 
 
         <blockquote>
-            <p><strong>Why is all this important?</strong></p>
+            Why is all this important?
         </blockquote>
 
-        <p>The continuum is language agnostic and applies to any modern programming language. This architecture helps
+        <p>
+            The continuum is language agnostic and applies to any modern programming language. This architecture helps
             reduce the cost of changing code as customer needs evolve. It provides developers and product owners the
             ability to use, reuse, and replace components within a given codebase to both pivot existing products and
-            easily create new ones.</p>
+            easily create new ones.
+        </p>
 
 
         <div class="info">
-            <h3>
+            <h2 id="project-structure">Project Structure</h2>
 
-                <a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span
-                        aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h3>
-
-            <p>The example codebase uses a few select dependencies to emphasise the continuum steps.
+            <p>
+                The example codebase uses a few select dependencies to emphasise the continuum steps.
                 Understanding the building blocks will help you understand your chosen framework. I've also selected
-                Kotlin as my programming language.</p>
-            <p>I've used a series of Git commit tags to illustrate each step.</p>
+                Kotlin as my programming language.
+            </p>
+
+            <p>
+                I've used a series of Git commit tags to illustrate each step.
+            </p>
 
             <pre><code>$ git tag -ln
 
@@ -117,264 +111,283 @@ v8    Databases
 
 </code></pre>
 
-            <p>The example project is a software project management tool similar to Pivotal Tracker. Although not the
+            <p>
+                The example project is a software project management tool similar to Pivotal Tracker. Although not the
                 actual codebase, Tracker followed a very similar evolution in application architecture. I've penciled in
-                a few key epic features - Allocations, Backlog Management, and Time Tracking.</p>
+                a few key epic features - Allocations, Backlog Management, and Time Tracking.
+            </p>
 
-            <p>I've focused on the back-end development, but there's no reason you couldn't take a similar
+            <p>
+                I've focused on the back-end development, but there's no reason you couldn't take a similar
                 approach for the front end development. The project includes only a few dependencies and resides within
-                a single Git repository.</p>
+                a single Git repository.
+            </p>
 
-            <p>Here's a helpful command when moving through the Git tags -</p>
+            <p>
+                Here's a helpful command when moving through the Git tags -
+            </p>
 
             <pre><code>$ git checkout v1 &amp;&amp; git clean -df
 </code></pre>
         </div>
 
+        <h2 id="single-application">Single Application</h2>
 
-        <h3>
-            <a id="single-application" class="anchor" href="#single-application" aria-hidden="true"><span
-                    aria-hidden="true" class="octicon octicon-link"></span></a>Single Application</h3>
+        <h3 id="v1-tag-first-commit">First commit</h3>
 
-        <h5>
-            <a id="v1-tag-first-commit" class="anchor" href="#v1-tag-first-commit" aria-hidden="true"><span
-                    aria-hidden="true" class="octicon octicon-link"></span></a>First commit</h5>
+        <p>
+            The v1 tag starts with a flat directory structure. This step, while slightly naive, demonstrates a
+            reasonable starting point having made no decisions around architecture. No groupings, no components, no
+            services. Just a single, flat directory structure with class files.
+        </p>
 
-        <p>The v1 tag starts with a flat directory structure. This step, while slightly naive, demonstrates a reasonable
-            starting point having made no decisions around architecture. No groupings, no components, no services. Just
-            a single, flat directory structure with class files.</p>
+        <h3 id="v2-tag-functional-groups">Functional groups</h3>
 
-        <h5>
-            <a id="v2-tag-functional-groups" class="anchor" href="#v2-tag-functional-groups" aria-hidden="true"><span
-                    aria-hidden="true" class="octicon octicon-link"></span></a>Functional groups</h5>
-
-        <p>v2 moves classes into Models, Controllers, Data Access Layer, and Utilities directories. I've noticed this
+        <p>
+            v2 moves classes into Models, Controllers, Data Access Layer, and Utilities directories. I've noticed this
             directory structure over the years in many popular frameworks, although I've found that as your application
-            evolves, a change to a small feature tends to drive changes through your entire codebase.</p>
+            evolves, a change to a small feature tends to drive changes through your entire codebase.
+        </p>
 
         <blockquote>
-            <p><strong>Would you ever put all your Integers in one file?</strong></p>
+            Would you ever put all your Integers in one file?
         </blockquote>
 
-        <p>Functional groups become increasingly painful to maintain as teams grow and the complexity and size of the
+        <p>
+            Functional groups become increasingly painful to maintain as teams grow and the complexity and size of the
             codebase increases. This is especially true when dependencies are not fully understood. I've found that
-            this
-            is typically the result of accidental design versus intentional design. For this reason, I've
+            this is typically the result of accidental design versus intentional design. For this reason, I've
             reverted the
-            Functional groups commit in favor of v3, Feature groups.</p>
+            Functional groups commit in favor of v3, Feature groups.
+        </p>
+
         <hr>
 
-        <h1 class="continuum_msg">Naming, organizing, and  reducing circular dependencies  are the three most important things you’ll ever do as a programmer</h1>
+        <h1>
+            Naming, organizing, and  reducing circular dependencies  are the three most important things you’ll ever do
+            as a programmer
+        </h1>
+
         <hr>
 
+        <h2 id="single-application-with-namespaces">Single Application with Namespaces</h2>
 
-        <h3>
-            <a id="single-application-with-namespaces" class="anchor" href="#single-application-with-namespaces"
-               aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Single Application
-            with Namespaces</h3>
+        <h3 id="v3-tag-feature-groups-or-bounded-contexts">Feature groups (Bounded content)</h3>
 
-        <h5>
-            <a id="v3-tag-feature-groups-or-bounded-contexts" class="anchor"
-               href="#v3-tag-feature-groups-or-bounded-contexts" aria-hidden="true"><span aria-hidden="true"
-                                                                                          class="octicon octicon-link"></span></a>Feature
-            groups (Bounded content)</h5>
-
-        <p>The v3 commit moves classes into feature groups or <a
-                href="http://martinfowler.com/bliki/BoundedContext.html">bounded contexts</a>. The benefits of bounded
-            contexts are readability and a step toward isolated (loosely coupled, highly cohesive) components.</p>
+        <p>
+            The v3 commit moves classes into feature groups or
+            <a href="http://martinfowler.com/bliki/BoundedContext.html">bounded contexts</a>. The benefits of bounded
+            contexts are readability and a step toward isolated (loosely coupled, highly cohesive) components.
+        </p>
 
         <blockquote>
-            <p><strong>Why is readability important?</strong></p>
+            Why is readability important?
         </blockquote>
 
-        <p>Imagine you've just joined the team and pulled the next story from the top of the backlog, Update Timesheets.
-            With functional groups, you would have to scan the entire codebase for timesheet related file changes. As
-            the size of your codebase increases, the potential to overlook associated files that also need updating
-            increases. Again, this is especially true as codebases increase in both size and complexity. Using feature
-            groups or bounded contexts, all the timesheet related files are in one place with any complexity confined to
-            a single directory.</p>
-
-        <p>The step toward single responsibility directories, while small, positions the codebase for v4, individual
-            components with bounded contexts.</p>
-
-        <p><span class="architecture">Design decision</span> I've avoided the use of a "common" or "util" directory in favor of, in this case,
-            jdbc-support and rest-support directories. Common or Util tells me absolutely nothing about the containing classes other than
-            they may be shared by every class in the codebase. Avoiding common, util or similar "generic" directories will allow you to evolve your codebase on a moment's notice.
+        <p>
+            Imagine you've just joined the team and pulled the next story from the top of the backlog, Update
+            Timesheets. With functional groups, you would have to scan the entire codebase for timesheet related file
+            changes. As the size of your codebase increases, the potential to overlook associated files that also need
+            updating increases. Again, this is especially true as codebases increase in both size and complexity. Using
+            feature groups or bounded contexts, all the timesheet related files are in one place with any complexity
+            confined to a single directory.
         </p>
 
         <p>
-            <span class="architecture">Design decision</span>
-            Database tests re-query the table data after data creation to ensure that records are actually persisted in the database.
+            The step toward single responsibility directories, while small, positions the codebase for v4, individual
+            components with bounded contexts.
         </p>
 
-        <span class="architecture">Design decision</span> Test package names are different than source package names.
-        This is to ensure the intended level of encapsulation and reveal accidental design choices. It should be
-        extremely
-        painful for people to test package / private methods.
+        <p>
+            <span class="callout">Design decision</span> I've avoided the use of a "common" or "util" directory in
+            favor of, in this case, jdbc-support and rest-support directories. Common or Util tells me absolutely
+            nothing about the containing classes other than they may be shared by every class in the codebase. Avoiding
+            common, util or similar "generic" directories will allow you to evolve your codebase on a moment's notice.
+        </p>
+
+        <p>
+            <span class="callout">Design decision</span> Database tests re-query the table data after data creation to
+            ensure that records are actually persisted in the database.
+        </p>
+
+        <p>
+            <span class="callout">Design decision</span> Test package names are different than source package names.
+            This is to ensure the intended level of encapsulation and reveal accidental design choices. It should be
+            extremely painful for people to test package / private methods.
+        </p>
 
         <hr>
 
-        <h3>
-            <a id="single-application-and-libraries" class="anchor" href="#single-application-and-libraries"
-               aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Single Application
-            and Components</h3>
+        <h2 id="single-application-and-libraries">Single Application and Components</h2>
 
-        <h5>
-            <a id="v4-tag-components" class="anchor" href="#v4-tag-components" aria-hidden="true"><span
-                    aria-hidden="true" class="octicon octicon-link"></span></a>Components</h5>
+        <h3 id="v4-tag-components">Components</h3>
 
-        <p>In the v4 commit I've extracted the Users, Accounts, and Projects components. I've also extracted components
-            for rest-support and jdbc-support, making a conscious effort to avoid creating a "common" package.</p>
+        <p>
+            In the v4 commit I've extracted the Users, Accounts, and Projects components. I've also extracted components
+            for rest-support and jdbc-support, making a conscious effort to avoid creating a "common" package.
+        </p>
 
-        <p>The main characteristic of the v4 commit is that each component is individually built and tested. This is
+        <p>
+            The main characteristic of the v4 commit is that each component is individually built and tested. This is
             similar to feature groups (loosely coupled and highly cohesive). Dependencies are clearly described within
             the build file and circular dependencies are resolved. The v4 commit sets us up nicely to introduce
-            Services.</p>
+            Services.
+        </p>
 
-        <p>I've created a single databases directory although this is slightly atypical. Data definition language within each component is more common, permitting a per component data store.
-            </p>
+        <p>
+            I've created a single databases directory although this is slightly atypical. Data definition language
+            within each component is more common, permitting a per component data store.
+        </p>
 
-        <span class="architecture">Design decision</span> I've chosen to create a Jdbc Template
-        over an Object Relational Mapping library. This is because the bidirectional nature of JPA or similar libraries
-        can lead to the accidental introduction of circular dependencies which make it painful to evolve a codebase. Database tables are not necessarily Objects and you shouldn't think about them as such.
-
-        <hr>
-
-        <h3>
-            <a id="multiple-applications-and-libraries" class="anchor" href="#multiple-applications-and-libraries"
-               aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Multiple Applications
-            and Components</h3>
-
-        <h5>
-            <a id="v5-tag-services" class="anchor" href="#v5-tag-services" aria-hidden="true"><span aria-hidden="true"
-                                                                                                    class="octicon octicon-link"></span></a>Applications
-        </h5>
-
-        <p>The v5 commit introduces 4 distinct applications - Allocations, Backlog, Registration, and Timesheets.</p>
-
-        <p>The Registration Application includes a simple REST API to access Account, Project, and User information. The
-            service itself is very minimal, leaving domain logic within components. The Allocations, Backlog, and
-            Timesheets Applications include a REST API, domain logic, and persistence layer. An alternate structure
-            might have been to create components for each feature group similar to the Registration Application.</p>
-
-        <div class="info">
-            <h3>
-
-                <a id="single-repo" class="anchor" href="single-repo" aria-hidden="true"><span
-                        aria-hidden="true" class="octicon octicon-link"></span></a>Single Repository</h3>
-
-            <p>You'll notice that I've maintained a single Git repo. The single repo significantly reduces the
-                overhead and complexity of API (in-process) versioning while enabling cross-component refactorings. The
-                assumption is that Applications are stateless, well-tested, and able to be deployed with the larger
-                suite of
-                Components and Applications regardless of any local changes. They are also only consumed by the single
-                "large" system. I understand that this topic is slightly controversial although, I highly encourage you
-                to
-                explore having a single repository.</p>
-        </div>
-
-        <p>The transition from step v5 to v6 shouldn't be taken lightly. The move to microservices is more than
-            just an
-            implementation detail and requires real and continued attention. Service availability (retry) and versioning
-            (especially deploying "breaking changes") are just a few of the topics that become top of mind daily.</p>
-
-        <p><span class="architecture">Design decision</span> Components include both Record and Info classes.
-        This is to ensure that an individual component's public API is decoupled from its internal database schema / implementation
-        - i.e. you could change a component's underlying database technology or version an API without
-        impacting existing clients.</p>
-
-        <p><span class="architecture">Design decision</span> You'll notice that Controller classes are located within each component.
-            I've never found a strong reason to keep controllers or data access objects anywhere else other than local to the component - i.e. everything
-            you need to know about a given bounded context is in one place. The design decision makes evolving the component to a microservice significantly less painful.
+        <p>
+            <span class="callout">Design decision</span> I've chosen to create a Jdbc Template over an Object Relational
+            Mapping library. This is because the bidirectional nature of JPA or similar libraries can lead to the
+            accidental introduction of circular dependencies which make it painful to evolve a codebase.
+            Database tables are not necessarily Objects and you shouldn't think about them as such.
         </p>
 
         <hr>
 
-        <h3>
-            <a id="services" class="anchor" href="#services" aria-hidden="true"><span aria-hidden="true"
-                                                                                      class="octicon octicon-link"></span></a>Multiple
-            Applications, Components and Services</h3>
+        <h2 id="multiple-applications-and-libraries">Multiple Applications and Components</h2>
 
-        <h5>
-            <a id="v6-tag-services" class="anchor" href="#v5-tag-services" aria-hidden="true"><span aria-hidden="true"
-                                                                                                    class="octicon octicon-link"></span></a>Services
-        </h5>
+        <h3 id="v5-tag-services">Applications</h3>
 
-        <p>The v6 commit demonstrates a microservices architecture - Allocations, Backlog and Timesheet applications are
-            dependent on the Registration service via REST.
+        <p>
+            The v5 commit introduces 4 distinct applications - Allocations, Backlog, Registration, and Timesheets.
+        </p>
 
-<img class="continuum" src="images/continuum-diagram.png" alt="">
+        <p>
+            The Registration Application includes a simple REST API to access Account, Project, and User information.
+            The service itself is very minimal, leaving domain logic within components. The Allocations, Backlog, and
+            Timesheets Applications include a REST API, domain logic, and persistence layer. An alternate structure
+            might have been to create components for each feature group similar to the Registration Application.
+        </p>
 
-        <p>I've found that scaling both teams and performance are typically the main drivers for moving components to
+        <div class="info">
+            <h2 id="single-repo">Single Repository</h2>
+
+            <p>
+                You'll notice that I've maintained a single Git repo. The single repo significantly reduces the
+                overhead and complexity of API (in-process) versioning while enabling cross-component refactorings. The
+                assumption is that Applications are stateless, well-tested, and able to be deployed with the larger
+                suite of Components and Applications regardless of any local changes. They are also only consumed by the
+                single "large" system. I understand that this topic is slightly controversial although, I highly
+                encourage you to explore having a single repository.
+            </p>
+        </div>
+
+        <p>
+            The transition from step v5 to v6 shouldn't be taken lightly. The move to microservices is more than
+            just an implementation detail and requires real and continued attention. Service availability (retry) and
+            versioning (especially deploying "breaking changes") are just a few of the topics that become top of mind
+            daily.
+        </p>
+
+        <p>
+            <span class="callout">Design decision</span> Components include both Record and Info classes.
+            This is to ensure that an individual component's public API is decoupled from its internal database schema /
+            implementation - i.e. you could change a component's underlying database technology or version an API
+            without impacting existing clients.
+        </p>
+
+        <p>
+            <span class="callout">Design decision</span> You'll notice that Controller classes are located within
+            each component. I've never found a strong reason to keep controllers or data access objects anywhere else
+            other than local to the component - i.e. everything you need to know about a given bounded context is in one
+            place. The design decision makes evolving the component to a microservice significantly less painful.
+        </p>
+
+        <hr>
+
+        <h2 id="services">Multiple Applications, Components and Services</h2>
+
+        <h3 id="v6-tag-services">Services</h3>
+
+        <p>
+            The v6 commit demonstrates a microservices architecture - Allocations, Backlog and Timesheet applications
+            are dependent on the Registration service via REST.
+        </p>
+
+        <img src="images/continuum-diagram.png" alt="Architecture diagram">
+
+        <p>
+            I've found that scaling both teams and performance are typically the main drivers for moving components to
             services for single systems; reuse, in this case, being another main driver. Reuse tends to be the main
-        driver for moving components to their own repository.
+            driver for moving components to their own repository.
+        </p>
 
-    </p>
 
-
-        <p>Lastly, you'll find an integration or acceptance test that "flows" through the suite of services and a
+        <p>
+            Lastly, you'll find an integration or acceptance test that "flows" through the suite of services and a
             multi-service manifest file for deployment.
         </p>
 
-
         <p>
-            <span class="architecture">Design decision</span> I've intentionally duplicated Info and Client classes in
-            each of the Allocations, Backlog and Timesheets components. While your first instinct might be to create a common "project-client" or "domain" component,
+            <span class="callout">Design decision</span> I've intentionally duplicated Info and Client classes in
+            each of the Allocations, Backlog and Timesheets components. While your first instinct might be to create a
+            common "project-client" or "domain" component,
             this duplication sets up for seamless versioning and moving components to separate Git repos as your team
             grows.
         </p>
 
         <p>
-            <span class="architecture">Design decision</span> You'll notice that I did not include or commit any
+            <span class="callout">Design decision</span> You'll notice that I did not include or commit any
             configuration or property files;
             user names, passwords, service location settings, etc.
             I've intentionally left this to the environment ensuring that the same artifact could truly be deployed to
             any environment;
             development, review, or production.
-
         </p>
 
-        <h5>
-            <a id="v7-tag-versioning" class="anchor" href="#v7-tag-versioning" aria-hidden="true"><span aria-hidden="true"
-                                                                                                    class="octicon octicon-link"></span></a>Versioning <span class="new">New Aug-2017</span>
-        </h5>
+        <h3 id="v7-tag-versioning">Versioning</h3>
 
         <p>
-            Versioning services naturally follows your initial microservices deployment. I've introduced the v7 commit as a guide to service versioning. The Projects component, within the Registration service, has been upgraded to support a new feature in Timesheets - only projects that are "funded" should allow for timesheet submission. To support the new feature, you'll notice the duplication of Info and Controller classes within the Projects component.
-<img class="continuum" src="images/continuum-diagram-versions.png" alt="">
+            Versioning services naturally follows your initial microservices deployment. I've introduced the v7 commit
+            as a guide to service versioning. The Projects component, within the Registration service, has been upgraded
+            to support a new feature in Timesheets - only projects that are "funded" should allow for timesheet
+            submission. To support the new feature, you'll notice the duplication of Info and Controller classes within
+            the Projects component.
+        </p>
+
+        <img src="images/continuum-diagram-versions.png" alt="Versioning diagram">
 
         <p>
-            The V2 API is used by the Timesheet service while our 2 other services, Backlog and Allocations, continue to use the V1 API.
+            The V2 API is used by the Timesheet service while our 2 other services, Backlog and Allocations, continue to
+            use the V1 API.
         </p>
 
         <p>
-            <span class="architecture">Design decision</span> I've used the Accept Header for my versioning strategy. There are lots of debates around how best to publish a new API version; URL, Accept Header, Custom Header. My recommendation is to simply choose the one that best meets your needs.
+            <span class="callout">Design decision</span> I've used the Accept Header for my versioning strategy.
+            There are lots of debates around how best to publish a new API version; URL, Accept Header, Custom Header.
+            My recommendation is to simply choose the one that best meets your needs.
         </p>
 
 
-        <h5>
-            <a id="v8-tag-databases" class="anchor" href="#v8-tag-databases" aria-hidden="true"><span aria-hidden="true"
-                                                                                                        class="octicon octicon-link"></span></a>Databases <span class="new">New Sept-2017</span>
-        </h5>
+        <h3 id="v8-tag-databases">Databases</h3>
 
         <p>
-            The v8 commit moves away from a single database to a database per microservice; Allocations, Backlog, Registration, and Timesheets. Implementing a per component data store becomes increasingly important as you evolve your application along the continuum to a distributed system. Service coupling has been completely removed. Services are now able to manage their own persistence strategy (choice of database technology), schema, and API versioning strategy independent of the other services.
+            The v8 commit moves away from a single database to a database per microservice; Allocations, Backlog,
+            Registration, and Timesheets. Implementing a per component data store becomes increasingly important as you
+            evolve your application along the continuum to a distributed system. Service coupling has been completely
+            removed. Services are now able to manage their own persistence strategy (choice of database technology),
+            schema, and API versioning strategy independent of the other services.
         </p>
 
         <hr>
 
         <div class="info">
-            <h3>
+            <h2 id="early-design-considerations">Early Design Considerations</h2>
 
-                <a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span
-                        aria-hidden="true" class="octicon octicon-link"></span></a>Early Design Considerations</h3>
-
-            <p>I tend to start all new projects with the 3 top level directories - applications, components, and databases.
-                While following the continuum, I've found that the first few steps happen so quickly, weeks versus
-                months, that it is easier to start every project with a component based directory structure.
-            </p>
             <p>
-                For Kotlin or Java projects, I tend to use gradle and include gradlew - resulting in the below initial directory structure.</p>
+                I tend to start all new projects with the 3 top level directories - applications, components, and
+                databases. While following the continuum, I've found that the first few steps happen so quickly, weeks
+                versus months, that it is easier to start every project with a component based directory structure.
+            </p>
+
+            <p>
+                For Kotlin or Java projects, I tend to use gradle and include gradlew - resulting in the below initial
+                directory structure.
+            </p>
 
             <pre><code>
 appcontinuum
@@ -389,43 +402,49 @@ appcontinuum
 ├── README.md
 └── settings.gradle
 </code></pre>
-
-
         </div>
 
+        <h2 id="summary">Summary</h2>
 
-        <h3>
-            <a id="summary" class="anchor" href="#summary" aria-hidden="true"><span aria-hidden="true"
-                                                                                    class="octicon octicon-link"></span></a>Summary
-        </h3>
-
-        <p>That's a wrap! Assuming you're on board with the continuum, I'm hopeful the project has given you insight in
-            how an application evolves over time.</p>
-
-        <p>Applications may start anywhere on the continuum depending on how much information the team has at the start
-            of the project; greenfield applications without product /market fit may start left while big existing
-            product
-            re-writes may start on the far right. Functional groupings could prove challenging when evolving along the
-            continuum. Finally, it's also worth mentioning that not all applications need to evolve and could stop
-            anywhere on the continuum.</p>
-
-        <p>Written by <a href="https://github.com/barinek" class="user-mention">@barinek</a></p>
-
-    </section>
-</div>
-
-<!-- FOOTER  -->
-<div id="footer_wrap" class="outer">
-    <footer class="inner">
-        <p class="copyright">The Application Continuum maintained by <a href="https://github.com/barinek">barinek</a>
+        <p>
+            That's a wrap! Assuming you're on board with the continuum, I'm hopeful the project has given you insight in
+            how an application evolves over time.
         </p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-        <p>Many thanks <a href="https://github.com/dajulia3" class="user-mention">@dajulia3</a>, <a
-                href="https://github.com/enocom" class="user-mention">@enocom</a>, <a
-                href="https://github.com/shageman" class="user-mention">@shageman</a>, and <a
-                href="https://github.com/austinbv" class="user-mention">@austinbv</a> for reviewing early drafts.</p>
-    </footer>
-</div>
+
+        <p>
+            Applications may start anywhere on the continuum depending on how much information the team has at the start
+            of the project; greenfield applications without product /market fit may start left while big existing
+            product re-writes may start on the far right. Functional groupings could prove challenging when evolving
+            along the continuum. Finally, it's also worth mentioning that not all applications need to evolve and could
+            stop anywhere on the continuum.
+        </p>
+
+        <p>
+            Written by <a href="https://github.com/barinek">@barinek</a>
+        </p>
+
+    </div>
+</main>
+
+<footer>
+    <div class="content">
+        <p>
+            The Application Continuum maintained by <a href="https://github.com/barinek">barinek</a>
+        </p>
+
+        <p>
+            Site by <a href="http://galavant.io">galavant</a>
+        </p>
+
+        <p>
+            Many thanks <a href="https://github.com/dajulia3">@dajulia3</a>,
+            <a href="https://github.com/enocom">@enocom</a>,
+            <a href="https://github.com/shageman">@shageman</a>,
+            and <a href="https://github.com/austinbv">@austinbv</a>
+            for reviewing early drafts.
+        </p>
+    </div>
+</footer>
 
 <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -438,7 +457,5 @@ appcontinuum
     } catch (err) {
     }
 </script>
-
-
 </body>
 </html>
